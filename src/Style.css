@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+/* Home Page */
+body {
+  background-image: linear-gradient(to bottom, #fedbe4, #fc93ad);
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  position: relative;
+  overflow: hidden; }
+
+header {
+  position: relative;
+  padding: 20px; 
+  z-index: 1; 
+}
+
+nav ul {
+  list-style-type: none; 
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #3f1c24;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 70%;
+  text-align: center;
+  background-color: #fdb7c8;
+  display: block;
+  margin: 5px;
+}
+
+nav ul a:hover {
+  border-color: #3f1c24;
+}
+
+nav {
+  justify-items: right;
+  margin-left: 99%;
+}
+
+main {
+  display: flex;
+  flex: 1; /* Allow main to take up remaining space */
+  justify-content: center; /* Center contents horizontally */
+  align-items: center; /* Center contents vertically */
+}
+
+.Container1 {
+  position: absolute; /* Position over the header */
+  top: 200px; /* Adjust this value to position below the header */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%; /* Responsive width */
+  max-width: 1200px; /* Maximum width */
+  margin-bottom: 40px; /* Increased gap at the bottom */
+  z-index: 0; /* Ensure it's below the header */
+}
+
+.mypic img {
+  width: 250px; /* Adjusted size to prevent overflow */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.name {
+  padding-left: 100px;
+}
+
+.homeHs h2 {
+  padding-left: 90px;
+}
+
+h2,
+h3 {
+  color: #3f1c24;
+  font-family: "kiwi Maru", sans-serif;
+  line-height: 1.6;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 20px;
+}
+
+
+footer {
+  margin-top: auto; 
+}
+
+/* /About page/  */
+.Container2 {
+  position: absolute; 
+  top: 100px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 90%; 
+  max-width: 1000px; 
+  margin-bottom: 40px;
+  z-index: 0;
+}
+
+.videoContainer {
+  width: 400px;
+  height: 350px;
+}
+
+/* /skills page/ /Projects page/  */
+.aboutme {
+  font-size: 10px;
+  padding-top: 20px;
+}
+
+.info {
+  padding-left: 60px;
+}
+
+/* /skills page/ */
+
+/* /Projects page/ */
+.projectmain {
+  display: flex;
+  flex-direction: column;
+  position: absolute; 
+  top: 50px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  max-width: 1200px; 
+  z-index: 0;
+}
+
+.Container3 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  margin-bottom: 40px; 
+  z-index: 0;
+}
+
+.project-image {
+  width: 50%;
+  margin: 22px;
+  padding: 20px;
+  border: 1px solid #cd7e91;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #cd7e91;
+}
+
+.project-image img {
+  width: 200px;
+  height: 200px;
+}
+
+.project-title {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.project-description {
+  font-size: 8px;
+  text-align: justify;
+}
+
+/* /contact me page/ */
+.contactmain {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100px; 
+  left: 40%; 
+  transform: translateX(-50%); 
+  max-width: 1200px;
+  z-index: 0;
+}
+
+h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #3f1c24;
+  font-family: "Jersey 10";
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  width: 400px;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact h4 {
+  font-size: 25px;
+}
+
+.contact-form1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.contact-form2 {
+  padding-top: 20px;
+}
+
+.contact-form2 input {
+  width: 95%;
+}
+
+.contact-form2 textarea {
+  width: 95%;
+  height: 70px;
+  margin-top: 10px;
+}
+
+.contact-form2 button {
+  margin-left: 30%;
+}
+
+.contact-info h3,
+p {
+  margin-bottom: 10px;
+}
+
+.contact-info span {
+  font-size: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form1 input {
+  height: 30px;
+}
+
+.contact-form2 input {
+  height: 30px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form2 button {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #fff;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons a {
+  margin: 0 10px; 
+}
+
+.icons i {
+  font-size: 24px; 
+  line-height: 24px; 
+  height: 24px; 
+  width: 24px; 
+  display: inline-flex; 
+  justify-content: center; 
+  color: #000; 
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    position: relative; 
+  }
+
+  nav ul {
+    display: none; 
+    flex-direction: column; 
+    position: absolute; 
+    right: 0; 
+    background-color: #fdb7c8; 
+    width: 70px; 
+    height: 300px;
+    border-radius: 20px;
+    z-index: 1;
+    transition: all 0.3s ease; 
+  }
+
+  nav ul.active {
+    display: flex; 
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto; 
+    cursor: pointer;
+  }
+
+  .Container1 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .mypic img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .contactmain {
+    position: relative; 
+    top: 0; 
+    transform: none; 
+    width: 90%; 
+    padding: 10px; 
+  }
+
+  .contact-container {
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+  }
+
+  .contact-info,
+  .contact {
+    width: 100%; 
+    margin-bottom: 20px; }
+
+  h4 {
+    font-size: 20px; 
+  }
+
+  .contact-form1 {
+    flex-direction: column;
+    align-items: stretch; 
+  }
+
+  .contact-form1 input {
+    margin-bottom: 10px; 
+  }
+
+  .contact-form2 button {
+    margin-left: 0; 
+    width: 35%; 
+    margin-left: 30%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+}
